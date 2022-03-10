@@ -14,24 +14,32 @@ const immagini = [
     {
         name: 'The Witcher',
         image: 'witcher.jpg',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam.',
     },
     {
         name: 'The Sinner',
         image: 'sinner.jpg',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam.',
     },
     {
         name: 'Revolution',
         image: 'rivoluzione.jpg',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam.',
     },
     {
         name: 'Daredevil',
         image: 'daredevil.jpg',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam.',
     },
     {
-        name: 'Strappare Lungo I Bordi',
-        image: 'bordi.jpg',
+        name: 'Ghoul',
+        image: 'ghoul.jpg',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam.',
     },
 ];
+
+
+
 
 let mainImageWrapper = document.querySelector('div.my-carousel-images');
 
@@ -40,10 +48,17 @@ mainImage = "";
 /* Ciclo gli elementi all'interno dell'array immagini */
 for (let i = 0; i < immagini.length; i++){
     mainImage += `
-    <div class="bigger-img d-none" id="visualized-image">
+    <div class="bigger-img d-none position-relative" id="visualized-image">
         <img src="${"img/"+immagini[i].image}" alt="${immagini[i].name}">
-    </div>`
+    </div>`;
+
+    document.querySelector('div.my-thumbnails.position-relative').innerHTML += `
+    <div class="my-thumbnails-container d-inline px-3">
+        <img src="${"img/"+immagini[i].image}" alt="${immagini[i].name}">
+    </div>`;
 }
+
+
 
 /* Scrivo nel div my-carousel-images tutti gli elementi dell'array immagini ciclati */
 mainImageWrapper.innerHTML = mainImage;

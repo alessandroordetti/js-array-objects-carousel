@@ -3,7 +3,7 @@ body{
 }
 
 div.container-fluid {
-    background-color: rgba(26, 26, 75, 0.363);
+    background-color: rgba(9, 9, 49, 0.61);
 }
 
 div.my-carousel-container{
@@ -17,8 +17,8 @@ div.my-carousel-images{
 }
 
 div.my-thumbnails{
-    background-color: violet;
     min-height: 160px;
+    padding: 2rem;
 }
 
 div.my-previous,
@@ -62,4 +62,16 @@ div.my-next > span::after{
 
 #visualized-image img {
     width: 100%;
+}
+
+.thumbnails-container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.my-thumbnails-container img {
+    width: calc(100% / 7);
+    height: 100%;
 }
