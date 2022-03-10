@@ -8,6 +8,8 @@ al click di un bottone possiamo far partire, ad intervalli di tempo a piacere, l
 Bonus 2:
 E se volessi un bottone per invertire la "direzione" del carosello? */
 
+document.getElementById('my-before-carousel').innerHTML = `<h1>Cosa vuoi guardare stasera?</h1>`;
+
 const immagini = [
     {
         name: 'The Witcher',
