@@ -2,10 +2,13 @@ body{
     font-family: "Montserrat", sans-serif;
 }
 
+div.container-fluid {
+    background-color: rgba(26, 26, 75, 0.363);
+}
+
 div.my-carousel-container{
     min-height: 700px;
     min-width:800px ;
-    background-color: aquamarine;
 }
 
 div.my-carousel-images{
@@ -51,4 +54,12 @@ div.my-next > span::after{
     font-weight: 900;
     content: "\f520";
     line-height: 30px;
+}
+
+#visualized-image {
+    width: 100%;
+}
+
+#visualized-image img {
+    width: 100%;
 }
